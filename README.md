@@ -18,5 +18,8 @@
 2.3 3차 필터링: 영어 단어 ex) NCS, npc, IV -> 엔씨에스, 엔피씨, 아이브이 변환  
   
 3. wav 유효 음성 구간(시작 점, 끝 점) 추출  
+데이터 Wave form에서 음성 구간이 시작하는 부분과 끝나는 부분을 알기 위해서는 일단 원본 데이터에서 Noise를 제거하는 작업이 필요  
 3.1 음성 + Noise 데이터를 처리하기 위해 Noise Reduction, Filtering 수행  
+<img width="80%" src="https://user-images.githubusercontent.com/69739208/184356999-db9cee03-ec05-4b1f-b16d-0e1c35751372.png"/>  
+  
 3.2 필터링된 음성 데이터에서 임의의 top_db, threshold를 정하여 유효 구간 추출  
